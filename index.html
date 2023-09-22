@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Responsive Page</title>
+    <style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    border: 1px solid black;
+    background-color: #f2f2f2;
+}
+h1 {
+     text-align:center;
+     }
+h2 {
+    font-size: 150%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 991px) {
+    .section {
+        width: 48%;
+    }
+
+    .section:nth-child(3) {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<h1> Our Menu </h1>
+    <div class="container">
+        <section class="section">
+            <h2>Chicken</h2>
+            <p>The chicken is a domesticated species that arose from the red junglefowl, originally from India. They have also partially hybridized with other wild species of junglefowl. Rooster and cock are terms for adult male birds, and a younger male may be called a cockerel. A male that has been castrated is a capon</p>
+        </section>
+        <section class="section">
+            <h2>Beef</h2>
+            <p>Beef is the culinary name for meat from cattle (Bos taurus).
+
+In prehistoric times, humankind hunted aurochs and later domesticated them. Since that time, numerous breeds of cattle have been bred specifically for the quality or quantity of their meat. Today, beef is the third most widely consumed meat in the world, after pork and poultry. As of 2018, the United States, Brazil, and China were the largest producers of beef.</p>
+        </section>
+        <section class="section">
+            <h2>Sushi</h2>
+            <p>Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, such as seafood—often raw—and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.</p>
+        </section>
+    </div>
+</body>
+</html>
